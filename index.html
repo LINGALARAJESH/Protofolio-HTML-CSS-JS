@@ -1,193 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Protofolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Rajesh Lingala</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Protofolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Rajesh Lingala</div>
+    <div>
+      <ul class="nav-links">
+        <li><a p href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Rajesh Lingala</div>
+    <div class="hamburger-memu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Rajesh Lingala</div>
-      <div class="hamburger-memu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about"  onclick="toggleMenu()">About</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#Contact"onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
-    </nav>
-    <section id="profile">
-        <div class="section-pic-container">
-            <img src="https://i.imgur.com/D3pWoVW.png" alt="Rajesh Lingala Profile photo">
-        </div>
-        <div class="section-text">
-          <p class="section-text-p1">Hello, I'am</p>
-          <h1 class="title">Rajesh </h1>
-          <p class="section-text-p2">Frontend Developer</p>
-        <div class="btn-container"> 
-          <button class="btn  btn-color-2" onclick="window.open('./../../resume/LINGALA RAJESH CV (2).pdf')">Download CV</button>
-          <button class="btn  btn-color-1" onclick="location.href='./#Contact' ">Contact</button>
-        </div>
-        <div class="socials-container">
-         <a target="_blank"  href="https://www.linkedin.com/in/lingala-rajesh-a3756621a/"><i class="bi bi-linkedin "></i></a>
-         <a target="_blank" href="https://github.com/LINGALARAJESH"><i class="bi bi-github  "></i></a>
-        </div>
-        </div>
-    </section>
-    <section id="about">
-      <div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="main-profile">
+    <div class="section-pic-container">
+      <img src="https://i.imgur.com/D3pWoVW.png" alt="Rajesh Lingala Profile photo">
+    </div>
+    <div class="section-text">
+      <p class="section-text-p1">Hello, I'am</p>
+      <h1 class="title">Rajesh </h1>
+      <p class="section-text-p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn  btn-color-2" onclick="window.open('./../../resume/LINGALA RAJESH CV (2).pdf')">Download
+          CV</button>
+        <button class="btn  btn-color-1" onclick="location.href='./#Contact' ">Contact</button>
+      </div>
+      <div class="socials-container">
+        <a target="_blank" href="https://www.linkedin.com/in/lingala-rajesh-a3756621a/"><i
+            class="bi bi-linkedin "></i></a>
+        <a target="_blank" href="https://github.com/LINGALARAJESH"><i class="bi bi-github  "></i></a>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="about">
+    <div class="main-about">
+    <div>
       <p class="section-text-p1">Get To Know More </p>
       <h1 class="title">About Me</h1>
+    </div>
+    <div class="section-container">
+      <div class="about-pic-container">
+        <img src="https://i.imgur.com/dLBPh9s.jpeg" alt="Frontend Developer Image">
       </div>
-      <div class="section-container">
-        <div class="about-pic-container">
-          <img src="https://i.imgur.com/dLBPh9s.jpeg" alt="Frontend Developer Image">
-        </div>
-        <div class="text-container">
-       <p>Hi everyone, my name is Rajesh Lingala. I am a Frontend Web Developer. I have been learning for the last 6 months and currently, I am just a fresher who is very interested in web development. Now, I am working on Python and Django for Back-End development. There are many programming languages in the world, but I chose these to improve myself in this competitive world.</p>
+      <div class="text-container">
+        <p>Hi everyone, my name is Rajesh Lingala. I am a Frontend Web Developer. I have been learning for the last 6
+          months and currently, I am just a fresher who is very interested in web development. Now, I am working on
+          Python and Django for Back-End development. There are many programming languages in the world, but I chose
+          these to improve myself in this competitive world.</p>
         <span id="coding">
-        <b>SkillS:</b> Python, Java Script, HTML, CSS, ReactJS, MySQl,Bootstrap.
+          <b>SkillS:</b> Python, Java Script, HTML, CSS, ReactJS, MySQl,Bootstrap.
         </span>
-        </div>
       </div>
-    </section>
-    <section id="skills">
-      <div>
+    </div>
+  </div>
+  </section>
+  <section id="skills">
+    <div>
       <p class="section-text-p1">Explore My</p>
       <h1 class="title">Skills</h1>
     </div>
-      <div class="skills-details-containers">
-        <div class="about-containers">
-          <div class="details-containers">
-            <h2 class="skills-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <i class="bi bi-check-square-fill icon"></i>
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experience</p>
-                </div>
-              </article>
-              <article>
-                <i class="bi bi-check-square-fill icon"></i>
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experience</p>
-                </div>
-              </article>
-              <article>
-                <i class="bi bi-check-square-fill icon"></i>
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="bi bi-check-square-fill icon"></i>
-                <div>
-                  <h3>React Js</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="bi bi-check-square-fill icon"></i>
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+    <div class="skills-details-containers">
+      <div class="about-containers">
+        <div class="details-containers">
+          <h2 class="skills-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa-brands fa-html5"></i>
+              <div>
+                <h3>HTML</h3>
+                <p>Experience</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-css3"></i>
+              <div>
+                <h3>CSS</h3>
+                <p>Experience</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-js"></i>
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-react"></i>
+              <div>
+                <h3>React Js</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-bootstrap"></i>
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
           </div>
-          <div class="details-containers">
-            <h2 class="skills-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <i class="bi bi-check-square-fill icon"></i>
-                <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="bi bi-check-square-fill icon"></i>
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <i class="bi bi-check-square-fill icon"></i>
-                <div>
-                  <h3>Git</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
+        </div>
+        <div class="details-containers">
+          <h2 class="skills-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa-brands fa-python"></i>
+              <div>
+                <h3>Python</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-database"></i>
+              <div>
+                <h3>MySQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <h3>Git</h3>
+                <p>Basic</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-    </section>
-    <section id="projects">
-      <div>
-        <p class="section-text-p1">Browse My Reference</p>
-        <h1 class="title">Projects</h1>
+    </div>
+  </section>
+  <section id="education"> 
+    <div class="education-main-container">
+    <div>
+      <p class="section-text-p1">Get To Know about  </p>
+      <h1 class="title">Education</h1>
+    </div>
+    <div class="education-continer">
+      <div class="education-containerss">
+      <div class="education-box">
+        <i id ="ed-1" class="fa-solid fa-user-graduate"></i>
+      <div class="education-details">
+        <h3> 2019 - July <br>Kamala Institute of Technology & Science </h3>
+        <p>B.Tech</p>
+        <div>
+        <p>Bachelors of Technology in Electronics and Communication Engineering</p>
+        <h4>CGPA:&nbsp 6.84</h4>
+        </div>
       </div>
-      <div class="skills-details-container">
-        <!-- 1 -->
-        <div class="project-container">
-          <div class="project-img">
-            <img src="https://i.imgur.com/uBFcQFe.png" alt="">
-          </div>
-          <h3 class="project-title">Real time -Weather<br>Project using<br>-HTML,CSS &JS</h3>
-          <div class="project-buttons">
-            <button class="btn btn-color-1" onclick="location.href='https://github.com/LINGALARAJESH/weather-API-mini-project' ">Github</button>
-            <button  class="btn btn-color-2" onclick="location.href='https://rajesh-weather-report-project-js.netlify.app' ">Live Demo</button>
-           </div>
-          </div>
-          <!-- 2 -->
-          <div class="project-container">
-            <div class="project-img">
-              <img src="https://i.imgur.com/aigkUZ5.png" alt="">
-            </div>
-            <h3 class="project-title">A single Tourisum <br>Project using <br>-HTML,CSS & JS</h3>
-            <div class="project-buttons">
-              <button class="btn btn-color-1" onclick="location.href='https://github.com/LINGALARAJESH/Travel-Tourisum' ">Github</button>
-              <button class="btn btn-color-2" onclick="location.href='https://rajesh-tourisum-website.netlify.app' ">Live Demo</button>
-             </div>
-            </div>
-            <!-- 3 -->
-            <div class="project-container">
-              <div class="project-img">
-                <img src="https://i.imgur.com/PKiwTXR.png" alt="">
-              </div>
-              <h3 class="project-title">A Shopper Responsive<br>Project using <br>-HTML,CSS,JS & ReactJS </h3>
-              <div class="project-buttons">
-                <button class="btn btn-color-1" onclick="location.href='https://github.com/LINGALARAJESH/SHOPPER-ECOMMERCE-WEBSITE' ">Github</button>
-                <button class="btn btn-color-2" onclick="location.href='http://shopper-responsive.netlify.app' ">Live Demo</button>
-               </div>
-              </div>
+    </div>
+    <div class="education-box">
+      <i id ="ed-2" class="fa-solid fa-book-open-reader"></i>
+      <div class="education-details">
+        <h3>2017 - 2019  <br>SR Nava Vignana Bharathi Junior College</h3>
+        <p>MPC</p>
+        <div>
+        <p>Maths,Physics,chemistry</p>
+        <h4>Marks:&nbsp 833</h4>
+        </div>
       </div>
+    </div>
+    <div  class="education-box">
+      <i id ="ed-3" class="fa-solid fa-school"></i>
+      <div class="education-details">
+        <h3>2016 - 2017<br>St.Joseph’s High School </h3>
+        <p>SSC</p>
+        <div>
+        <h4>GPA:&nbsp 8.3</h4>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  </section>
+  <section id="projects">
+    <div class="main-container">
+    <div>
+      <p class="section-text-p1">Browse My Reference</p>
+      <h1 class="title">Projects</h1>
+    </div>
+    <div class="skills-details-container">
+      <!-- 1 -->
+      <div class="project-container">
+        <div class="project-img">
+          <img src="https://i.imgur.com/uBFcQFe.png" alt="">
+        </div>
+        <h3 class="project-title">Real time -Weather<br>Project using<br>-HTML,CSS &JS</h3>
+        <div class="project-buttons">
+          <button class="btn btn-color-1"
+            onclick="location.href='https://github.com/LINGALARAJESH/weather-API-mini-project' ">Github</button>
+          <button class="btn btn-color-2 "
+            onclick="location.href='https://rajesh-weather-report-project-js.netlify.app' ">Live Demo</button>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="project-container">
+        <div class="project-img">
+          <img src="https://i.imgur.com/aigkUZ5.png" alt="">
+        </div>
+        <h3 class="project-title">A single Tourisum <br>Project using <br>-HTML,CSS & JS</h3>
+        <div class="project-buttons">
+          <button class="btn btn-color-1"
+            onclick="location.href='https://github.com/LINGALARAJESH/Travel-Tourisum' ">Github</button>
+          <button class="btn btn-color-2" onclick="location.href='https://rajesh-tourisum-website.netlify.app' ">Live
+            Demo</button>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="project-container">
+        <div class="project-img">
+          <img src="https://i.imgur.com/PKiwTXR.png" alt="">
+        </div>
+        <h3 class="project-title">A Shopper Responsive<br>Project using <br>-HTML,CSS,JS & ReactJS </h3>
+        <div class="project-buttons">
+          <button class="btn btn-color-1"
+            onclick="location.href='https://github.com/LINGALARAJESH/SHOPPER-ECOMMERCE-WEBSITE' ">Github</button>
+          <button class="btn btn-color-2" onclick="location.href='http://shopper-responsive.netlify.app' ">Live
+            Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <section id="contact">
+    <div class="contact-container">
+    <div>
+      <p class="section-text-p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+    </div>
+    <div class="contact-info-upper-container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact-Me</h1>
+          <div>
+            <p><a target="_blank" href="mailto:rajeshlingala08@gmail.com"><i
+                  class="fa-solid fa-envelope"></i></a>rajeshlingala08@gmail.com</p>
+            <p><a target="_blank" href="#"><i class="fa-solid fa-phone"></i></a>+91 9346905812</p>
+          </div>
+          <div class="socila-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/lingala-rajesh-a3756621a/"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/LINGALARAJESH"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="mailto:rajeshlingala08@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a target="_blank" href="https://twitter.com/Rajeshlingala4"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="../../resume/LINGALA RAJESH CV (2).pdf" class="btn  btn-color-2 btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <h1 class="subtitle">Get-In-Touch</h1>
+          <form name='submit-to-google-sheet'>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button onclick="submit_message()" class="btn  btn-color-2 shade " type="submit">Submit</button>
+          </form>
+          <h1 id="msg"></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <script src="script.js"></script>
+</body>
 
-    </section>
-    <script src="script.js"></script>
-  </body>
 </html>
