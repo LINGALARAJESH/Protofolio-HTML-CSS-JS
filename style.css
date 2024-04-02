@@ -13,7 +13,7 @@ body {
 
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 p {
@@ -28,13 +28,13 @@ a,.btn {
 }
 
 /*Navigation*/
-#desktop-nav {
-    position: sticky;
-    top: 0;
-    z-index:10;
+#desktop-nav{
+    width:100%;
+    position:fixed;
+    z-index: 5;
+    top:0;
     background: transparent;
 }
-
 nav,
 .nav-links {
     display: flex;
@@ -156,10 +156,9 @@ a:hover {
 }
 
 section {
-    padding-top: 4vh;
     height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
+    margin: 2vh 10rem ;
+    box-sizing:content-box;
     min-height: fit-content;
 }
 
@@ -172,13 +171,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    height: 100vh;
-    position: sticky;
-    top:0px ;
-    z-index: 1;
+    gap: 2rem;;
     background-image: linear-gradient(to bottom right, #e8f9fd,#DFDCE3);
-    box-shadow: 30px 10px 10px #DFDCE3,0 30px 10px #DFDCE3,-30px 0 10px #e8f9fd;
+    box-shadow: 5px 5px 10px #6362627d;
 }
 .main-profile{
     display: flex;
@@ -189,14 +184,15 @@ section {
 
 .section-pic-container {
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: auto 0;
     border: 5px solid rgb(0, 0, 0);
     border-radius: 100%;
+    transition:0.4s ;
 }
 .section-pic-container:hover{
-        transform: scale(0.5);
+        transform: scale(0.7);
 }
 .section-text {
     align-self: center;
@@ -289,11 +285,9 @@ section {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    position: sticky;
-    z-index: 2;
-    top: 0;
-    height: 100vh;
+    scroll-margin-top: 2vh;
     background-image: linear-gradient(to bottom right, #fceed1,  #dea6af);
+    box-shadow: 5px 5px 10px #6362627d;
     padding: 0 100px;
 }
 
@@ -335,13 +329,10 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    position: sticky;
-    z-index:4;
-    top: 0;
-    height: 100vh;
     background-image: linear-gradient(to bottom right,#e8f9fd, #c2edda);
+    box-shadow: 5px 5px 10px #6362627d;
     padding: 0 100px;
-
+    scroll-margin-top: 2vh;
 }
 
 .skills-sub-title {
@@ -408,11 +399,10 @@ article i {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    z-index: 5;
-    top: 0;
     background-image: linear-gradient(to bottom right, #f6f5f3,  #a0d2eb);
+    box-shadow: 5px 5px 10px #6362627d;
     padding: 0 100px;
+    scroll-margin-top: 2vh;
 }
 
 .main-container {
@@ -460,14 +450,12 @@ article i {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    z-index: 6;
-    top: 0;
-    height: 100vh;
     background-color: #8EC5FC;
     background-image: linear-gradient(125deg, #c2d5e8 0%, #E0C3FC 100%);
+    box-shadow: 5px 5px 10px #6362627d;
     padding: 0 100px;
     box-shadow: -30px 0 25px  #8EC5FC 0%;
+    scroll-margin-top: 2vh;
 }
 
 .contact-container {
@@ -559,13 +547,11 @@ form textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    z-index: 3;
-    top:0;
-    height: 100vh;
     background-color: #74EBD5;
     background-image: linear-gradient(90deg,#dcf3d0,#ffe1d0 );
+    box-shadow: 5px 5px 10px #6362627d;;
     padding:0 220px;
+    scroll-margin-top: 2vh;
 }
 
 .education-main-container {
